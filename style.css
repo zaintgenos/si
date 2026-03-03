@@ -69,7 +69,7 @@ body {
 .banner-card h2 { font-size: 40px; margin-bottom: 20px; }
 
 /* CATEGORÍAS */
-.categories { background: ##0B3D2E; padding: 120px 60px; }
+.categories { background: #0B3D2E; padding: 120px 60px; }
 .categories-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: center; }
 .category { background: white; padding: 40px; border-radius: 30px; transition: 0.3s ease; }
 .category:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
