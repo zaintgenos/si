@@ -2,98 +2,133 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1 Jackets | Colección Oficial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="logo">F1 Jackets</div>
-        <nav class="nav">
+
+        <nav class="nav" id="nav">
             <a href="#hero">Inicio</a>
             <a href="#catalogo">Colección</a>
             <a href="#">Contacto</a>
         </nav>
+
+        <div class="cart">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section id="hero" class="hero">
         <div class="hero-content">
-            <h1>Velocidad. Estilo. Pasión.</h1>
-            <p>Descubre nuestra colección exclusiva de chaquetas oficiales inspiradas en la Fórmula 1.</p>
-            <a href="#catalogo" class="btn-primary">Ver Colección</a>
+            <h1>Domina la pista.<br>Viste la velocidad.</h1>
+            <p>Chaquetas oficiales inspiradas en las escuderías más icónicas.</p>
+            <a href="#catalogo" class="btn-primary">Explorar Colección</a>
         </div>
     </section>
 
     <!-- CATÁLOGO -->
     <section id="catalogo" class="catalogo">
-        <h2>Nuestra Colección</h2>
+        <h2>Colección 2026</h2>
 
         <div class="grid">
 
-            <!-- Producto 1 -->
             <div class="card">
-                <img src="https://source.unsplash.com/400x500/?racing,jacket" alt="Red Bull Racing Heritage">
+                <img src="https://source.unsplash.com/500x600/?racing,jacket" alt="">
                 <h3>Red Bull Racing Heritage</h3>
                 <p class="price">$199</p>
-                <button onclick="addToCart()">Añadir al carrito</button>
+                <button class="add-btn">Añadir al carrito</button>
             </div>
 
-            <!-- Producto 2 -->
             <div class="card">
-                <img src="https://source.unsplash.com/400x500/?ferrari,jacket" alt="Ferrari Team Jacket">
+                <img src="https://source.unsplash.com/500x600/?ferrari,jacket" alt="">
                 <h3>Ferrari Team Jacket</h3>
                 <p class="price">$219</p>
-                <button onclick="addToCart()">Añadir al carrito</button>
+                <button class="add-btn">Añadir al carrito</button>
             </div>
 
-            <!-- Producto 3 -->
             <div class="card">
-                <img src="https://source.unsplash.com/400x500/?mercedes,racing,jacket" alt="Mercedes AMG Petronas">
+                <img src="https://source.unsplash.com/500x600/?mercedes,racing,jacket" alt="">
                 <h3>Mercedes AMG Petronas</h3>
                 <p class="price">$210</p>
-                <button onclick="addToCart()">Añadir al carrito</button>
+                <button class="add-btn">Añadir al carrito</button>
             </div>
 
-            <!-- Producto 4 -->
             <div class="card">
-                <img src="https://source.unsplash.com/400x500/?mclaren,jacket" alt="McLaren Performance Jacket">
+                <img src="https://source.unsplash.com/500x600/?mclaren,jacket" alt="">
                 <h3>McLaren Performance Jacket</h3>
                 <p class="price">$189</p>
-                <button onclick="addToCart()">Añadir al carrito</button>
+                <button class="add-btn">Añadir al carrito</button>
             </div>
 
-            <!-- Producto 5 -->
             <div class="card">
-                <img src="https://source.unsplash.com/400x500/?aston,martin,jacket" alt="Aston Martin Racing">
+                <img src="https://source.unsplash.com/500x600/?aston,martin,jacket" alt="">
                 <h3>Aston Martin Racing</h3>
                 <p class="price">$205</p>
-                <button onclick="addToCart()">Añadir al carrito</button>
+                <button class="add-btn">Añadir al carrito</button>
             </div>
 
-            <!-- Producto 6 -->
             <div class="card">
-                <img src="https://source.unsplash.com/400x500/?alpine,racing,jacket" alt="Alpine F1 Team Jacket">
+                <img src="https://source.unsplash.com/500x600/?alpine,racing,jacket" alt="">
                 <h3>Alpine F1 Team Jacket</h3>
                 <p class="price">$175</p>
-                <button onclick="addToCart()">Añadir al carrito</button>
+                <button class="add-btn">Añadir al carrito</button>
             </div>
 
         </div>
     </section>
 
-    <footer class="footer">
-        <p>© 2026 F1 Jackets. Todos los derechos reservados.</p>
-    </footer>
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <p>Producto añadido al carrito 🏁</p>
+        </div>
+    </div>
 
-    <script>
-        function addToCart() {
-            alert("Producto añadido al carrito 🏁");
-        }
-    </script>
+<script>
+
+let cartCount = 0;
+const cartDisplay = document.getElementById("cart-count");
+const buttons = document.querySelectorAll(".add-btn");
+const modal = document.getElementById("modal");
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+const header = document.getElementById("header");
+
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        cartCount++;
+        cartDisplay.textContent = cartCount;
+
+        modal.classList.add("show");
+        setTimeout(() => modal.classList.remove("show"), 1500);
+    });
+});
+
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+
+window.addEventListener("scroll", () => {
+    header.classList.toggle("scrolled", window.scrollY > 50);
+});
+
+</script>
 
 </body>
 </html>
