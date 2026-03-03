@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban Performance</title>
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
-  <!-- FontAwesome para íconos sociales -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-papb31jLQ+s45r0PVXYDx+QcR9zEqtmx68Naa3t2Q+XJQWbkEYrCJgl3NztG6hXJGl1yMlFxnNuP6c+fUpNxDQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-
-  <link rel="stylesheet" href="style.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- NAVBAR -->
   <header class="navbar">
     <nav class="nav-container">
@@ -32,9 +22,7 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-
       <div class="logo">URBAN</div>
-
       <a href="#" class="btn btn-blue">Entrenar</a>
     </nav>
   </header>
@@ -43,25 +31,22 @@
   <section class="hero">
     <div class="hero-container">
       <div class="hero-text">
-        <h1>TU RENDIMIENTO<br />NO TIENE LÍMITES</h1>
+        <h1>TU RENDIMIENTO<br>NO TIENE LÍMITES</h1>
         <a href="#" class="btn btn-orange">Descubrir Colección</a>
       </div>
-
       <div class="hero-graphic">
         <svg viewBox="0 0 500 500">
-          <path
-            d="M10 250 Q150 50 300 250 T490 250"
+          <path d="M10 250 Q150 50 300 250 T490 250"
             stroke-width="12"
             fill="none"
             stroke-linecap="round"
-            stroke="url(#grad)"
-          />
+            stroke="url(#grad)" />
           <defs>
             <linearGradient id="grad">
-              <stop offset="0%" stop-color="#2979FF" />
-              <stop offset="25%" stop-color="#00C853" />
-              <stop offset="50%" stop-color="#FFD600" />
-              <stop offset="100%" stop-color="#FF6D00" />
+              <stop offset="0%" stop-color="#2979FF"/>
+              <stop offset="25%" stop-color="#00C853"/>
+              <stop offset="50%" stop-color="#FFD600"/>
+              <stop offset="100%" stop-color="#FF6D00"/>
             </linearGradient>
           </defs>
         </svg>
@@ -73,12 +58,8 @@
   <section class="product">
     <div class="product-container">
       <div class="product-card">
-        <img
-          src="https://images.unsplash.com/photo-1599058917212-d750089bc07e"
-          alt="Atleta"
-        />
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="Atleta">
       </div>
-
       <div class="product-text">
         <h4>INNOVACIÓN</h4>
         <h2>TECNOLOGÍA TEXTIL</h2>
@@ -90,7 +71,7 @@
     </div>
   </section>
 
-  <!-- BANNER SOCIAL -->
+  <!-- BANNER -->
   <section class="banner">
     <div class="banner-overlay">
       <div class="banner-card">
@@ -107,12 +88,10 @@
         <h3>Running</h3>
         <p>Equipamiento optimizado para velocidad y resistencia.</p>
       </div>
-
       <div class="category">
         <h3>Training</h3>
         <p>Máxima comodidad para entrenamientos intensos.</p>
       </div>
-
       <div class="category">
         <h3>Yoga</h3>
         <p>Flexibilidad y suavidad para tu equilibrio interior.</p>
@@ -122,7 +101,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-top">
+    <div class="footer-container">
       <div class="footer-brand">
         <h2>URBAN</h2>
         <p>Rendimiento, innovación y estilo urbano.</p>
@@ -136,54 +115,19 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="footer-contact">
-        <h4>Contacto</h4>
-        <p><i class="fas fa-phone"></i> +0123 456 789 00</p>
-        <p><i class="fas fa-envelope"></i> contacto@urban.com</p>
-      </div>
-      <div class="footer-subscribe">
-        <h4>Suscríbete</h4>
-        <form id="subscribe-form">
-          <input type="email" placeholder="Escribe tu email" required />
-          <button type="submit">Subscribe</button>
-        </form>
-        <p
-          id="subscribe-message"
-          style="display: none; color: green; margin-top: 8px"
-        >
-          ¡Gracias por suscribirte!
-        </p>
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">TikTok</a>
+        </div>
       </div>
     </div>
-
-    <div class="footer-social">
-      <p>Síguenos:</p>
-      <div class="social-icons">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-
     <div class="footer-bottom">
       <p>© 2026 URBAN. Todos los derechos reservados.</p>
-      <nav>
-        <a href="#">Privacy Policy</a> | <a href="#">Our History</a> |
-        <a href="#">What We Do</a>
-      </nav>
     </div>
   </footer>
 
-  <script>
-    const form = document.getElementById("subscribe-form");
-    const message = document.getElementById("subscribe-message");
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      message.style.display = "block";
-      form.reset();
-    });
-  </script>
 </body>
 </html>
