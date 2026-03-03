@@ -218,6 +218,10 @@ body {
   .nav-menu {
     display: none;
   }
+  .footer-container {
+  grid-template-columns: 1fr;
+  text-align: center;
+  }
 }
 /* ---------------- FOOTER ---------------- */
 
