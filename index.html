@@ -1,141 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportWear - Domina el Juego</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Performance</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="nav-container">
-        <div class="logo">SportWear</div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
-        <nav class="nav-menu">
-            <a href="#">Inicio</a>
-            <a href="#">Categorías</a>
-            <a href="#">Ofertas</a>
-            <a href="#">Contacto</a>
-        </nav>
+      <div class="logo">URBAN</div>
 
-        <div class="nav-icons">
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
-        </div>
-    </div>
-</header>
+      <a href="#" class="btn btn-blue">Entrenar</a>
+    </nav>
+  </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Domina el Juego</h1>
-        <p>Rendimiento, estilo y actitud en cada movimiento.</p>
-        <button class="btn-primary">Comprar Ahora</button>
-    </div>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-container">
 
-<!-- CATEGORÍAS -->
-<section class="categories">
-    <h2 class="section-title">Categorías</h2>
-    <div class="category-grid">
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1520975928316-7d45d5f8c8f5?auto=format&fit=crop&w=800&q=80" alt="Hombre">
-            <div class="overlay">Hombre</div>
-        </div>
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Mujer">
-            <div class="overlay">Mujer</div>
-        </div>
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80" alt="Accesorios">
-            <div class="overlay">Accesorios</div>
-        </div>
-    </div>
-</section>
+      <div class="hero-text">
+        <h1>TU RENDIMIENTO<br>NO TIENE LÍMITES</h1>
+        <a href="#" class="btn btn-orange">Descubrir Colección</a>
+      </div>
 
-<!-- PRODUCTOS -->
-<section class="products">
-    <h2 class="section-title">Nuevos Productos</h2>
-    <div class="product-grid">
-
-        <div class="product-card">
-            <span class="badge new">Nuevo</span>
-            <div class="product-img">
-                <img src="https://images.unsplash.com/photo-1528701800489-20be3c6f3f57?auto=format&fit=crop&w=600&q=80">
-            </div>
-            <h3>Zapatillas Runner X</h3>
-            <p class="price">$89.99</p>
-        </div>
-
-        <div class="product-card">
-            <span class="badge discount">-20%</span>
-            <div class="product-img">
-                <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?auto=format&fit=crop&w=600&q=80">
-            </div>
-            <h3>Sudadera ProFit</h3>
-            <p class="price">$59.99</p>
-        </div>
-
-        <div class="product-card">
-            <span class="badge new">Nuevo</span>
-            <div class="product-img">
-                <img src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=600&q=80">
-            </div>
-            <h3>Short Performance</h3>
-            <p class="price">$39.99</p>
-        </div>
-
-        <div class="product-card">
-            <span class="badge discount">-15%</span>
-            <div class="product-img">
-                <img src="https://images.unsplash.com/photo-1584467735871-8a5f3b43f520?auto=format&fit=crop&w=600&q=80">
-            </div>
-            <h3>Mochila Deportiva</h3>
-            <p class="price">$49.99</p>
-        </div>
+      <div class="hero-graphic">
+        <svg viewBox="0 0 500 500">
+          <path d="M10 250 Q150 50 300 250 T490 250"
+            stroke-width="12"
+            fill="none"
+            stroke-linecap="round"
+            stroke="url(#grad)" />
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#2979FF"/>
+              <stop offset="25%" stop-color="#00C853"/>
+              <stop offset="50%" stop-color="#FFD600"/>
+              <stop offset="100%" stop-color="#FF6D00"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
 
     </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-container">
+  <!-- PRODUCTO -->
+  <section class="product">
+    <div class="product-container">
+      
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="Atleta">
+      </div>
 
-        <div>
-            <h4>Sobre Nosotros</h4>
-            <p>Somos una marca enfocada en rendimiento y estilo deportivo moderno.</p>
-        </div>
-
-        <div>
-            <h4>Ayuda</h4>
-            <ul>
-                <li>Envíos</li>
-                <li>Devoluciones</li>
-                <li>Soporte</li>
-            </ul>
-        </div>
-
-        <div>
-            <h4>Redes Sociales</h4>
-            <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>TikTok</li>
-            </ul>
-        </div>
-
-        <div>
-            <h4>Newsletter</h4>
-            <input type="email" placeholder="Tu correo">
-            <button class="btn-secondary">Suscribirse</button>
-        </div>
+      <div class="product-text">
+        <h4>INNOVACIÓN</h4>
+        <h2>TECNOLOGÍA TEXTIL</h2>
+        <p>
+          Diseñada para maximizar tu rendimiento con materiales transpirables,
+          ligeros y de alta resistencia.
+        </p>
+      </div>
 
     </div>
-    <p class="copyright">© 2026 SportWear. Todos los derechos reservados.</p>
-</footer>
+  </section>
+
+  <!-- BANNER SOCIAL -->
+  <section class="banner">
+    <div class="banner-overlay">
+      <div class="banner-card">
+        <h2>ÚNETE AL MOVIMIENTO</h2>
+        <a href="#" class="btn btn-orange">Ser Parte</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="categories">
+    <div class="categories-container">
+
+      <div class="category">
+        <h3>Running</h3>
+        <p>Equipamiento optimizado para velocidad y resistencia.</p>
+      </div>
+
+      <div class="category">
+        <h3>Training</h3>
+        <p>Máxima comodidad para entrenamientos intensos.</p>
+      </div>
+
+      <div class="category">
+        <h3>Yoga</h3>
+        <p>Flexibilidad y suavidad para tu equilibrio interior.</p>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>
