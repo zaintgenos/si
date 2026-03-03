@@ -3,129 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Urban Performance</title>
+  <title>Sport Wild</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crema: "#F8F7F2",
+            bosque: "#004236",
+            rosa: "#F7D2E0",
+            naranja: "#FF6B00"
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <nav class="nav-container">
-      <ul class="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="logo">URBAN</div>
-      <a href="#" class="btn btn-blue">Entrenar</a>
+<body class="bg-crema font-sans text-gray-900">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="bg-crema py-6">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6">
+
+      <!-- Links izquierda -->
+      <div class="hidden md:flex space-x-8 font-light">
+        <a href="#" class="hover:text-bosque">Hombre</a>
+        <a href="#" class="hover:text-bosque">Mujer</a>
+        <a href="#" class="hover:text-bosque">Accesorios</a>
+      </div>
+
+      <!-- Logo centrado -->
+      <div class="text-2xl font-black tracking-widest text-center">
+        SPORT WILD
+      </div>
+
+      <!-- Botón derecha -->
+      <div>
+        <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition">
+          CONTACTO
+        </a>
+      </div>
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-text">
-        <h1>TU RENDIMIENTO<br>NO TIENE LÍMITES</h1>
-        <a href="#" class="btn btn-orange">Descubrir Colección</a>
-      </div>
-      <div class="hero-graphic">
-        <svg viewBox="0 0 500 500">
-          <path d="M10 250 Q150 50 300 250 T490 250"
-            stroke-width="12"
-            fill="none"
-            stroke-linecap="round"
-            stroke="url(#grad)" />
-          <defs>
-            <linearGradient id="grad">
-              <stop offset="0%" stop-color="#2979FF"/>
-              <stop offset="25%" stop-color="#00C853"/>
-              <stop offset="50%" stop-color="#FFD600"/>
-              <stop offset="100%" stop-color="#FF6D00"/>
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-    </div>
-  </section>
 
-  <!-- PRODUCTO -->
-  <section class="product">
-    <div class="product-container">
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="Atleta">
-      </div>
-      <div class="product-text">
-        <h4>INNOVACIÓN</h4>
-        <h2>TECNOLOGÍA TEXTIL</h2>
-        <p>
-          Diseñada para maximizar tu rendimiento con materiales transpirables,
-          ligeros y de alta resistencia.
-        </p>
-      </div>
-    </div>
-  </section>
+  <main>
 
-  <!-- BANNER -->
-  <section class="banner">
-    <div class="banner-overlay">
-      <div class="banner-card">
-        <h2>ÚNETE AL MOVIMIENTO</h2>
-        <a href="#" class="btn btn-orange">Ser Parte</a>
-      </div>
-    </div>
-  </section>
+    <!-- ================= HERO ================= -->
+    <section class="relative overflow-hidden bg-crema py-24">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-  <!-- CATEGORÍAS -->
-  <section class="categories">
-    <div class="categories-container">
-      <div class="category">
-        <h3>Running</h3>
-        <p>Equipamiento optimizado para velocidad y resistencia.</p>
-      </div>
-      <div class="category">
-        <h3>Training</h3>
-        <p>Máxima comodidad para entrenamientos intensos.</p>
-      </div>
-      <div class="category">
-        <h3>Yoga</h3>
-        <p>Flexibilidad y suavidad para tu equilibrio interior.</p>
-      </div>
-    </div>
-  </section>
+        <!-- Texto -->
+        <div>
+          <h1 class="text-5xl md:text-7xl font-black leading-tight">
+            NUESTRA ROPA <br> AMPLIFICA <br> TU ENERGÍA
+          </h1>
+          <button class="mt-8 bg-naranja text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+            EXPLORAR COLECCIÓN
+          </button>
+        </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <h2>URBAN</h2>
-        <p>Rendimiento, innovación y estilo urbano.</p>
+        <!-- Línea orgánica SVG -->
+        <div class="relative h-80 md:h-96">
+          <svg class="absolute w-full h-full" viewBox="0 0 600 400" fill="none">
+            <path d="M0 200 C150 50, 300 350, 600 150" stroke="#0066FF" stroke-width="8" fill="none"/>
+            <path d="M0 250 C200 100, 350 400, 600 200" stroke="#00A86B" stroke-width="6" fill="none"/>
+            <path d="M0 300 C200 150, 400 350, 600 250" stroke="#FFD700" stroke-width="5" fill="none"/>
+            <path d="M0 350 C200 200, 400 300, 600 300" stroke="#FF6B00" stroke-width="4" fill="none"/>
+          </svg>
+        </div>
+
       </div>
-      <div class="footer-links">
-        <h4>Enlaces</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <h4>Síguenos</h4>
-        <div class="social-icons">
-          <a href="#">Instagram</a>
-          <a href="#">Facebook</a>
-          <a href="#">TikTok</a>
+    </section>
+
+
+    <!-- ================= PRODUCTO ================= -->
+    <section class="bg-bosque py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="bg-white rounded-3xl p-8 md:p-16 grid md:grid-cols-2 gap-12 items-center">
+
+          <!-- Imagen -->
+          <div>
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519"
+              class="rounded-3xl w-full object-cover">
+          </div>
+
+          <!-- Texto -->
+          <div>
+            <h2 class="text-4xl font-black mb-6 text-bosque">
+              Rendimiento Pro
+            </h2>
+            <p class="text-gray-600 font-light mb-6">
+              Tecnología avanzada, materiales ultraligeros y diseño ergonómico.
+              Diseñado para atletas que buscan superar sus límites.
+            </p>
+            <button class="bg-naranja text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+              VER PRODUCTO
+            </button>
+          </div>
+
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 URBAN. Todos los derechos reservados.</p>
+    </section>
+
+
+    <!-- ================= SOCIAL BANNER ================= -->
+    <section class="relative py-24">
+      <img src="https://images.unsplash.com/photo-1546484959-fb3fc6f95f98"
+        class="w-full h-[500px] object-cover rounded-3xl max-w-7xl mx-auto">
+
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="bg-white bg-opacity-90 backdrop-blur-md px-12 py-8 rounded-3xl shadow-xl">
+          <h3 class="text-3xl md:text-4xl font-black text-bosque text-center">
+            ENTRENA EN EQUIPO
+          </h3>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= CATEGORÍAS ================= -->
+    <section class="bg-rosa py-24">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+
+        <h2 class="text-4xl font-black mb-16">Categorías</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+          <!-- Running -->
+          <div class="flex flex-col items-center">
+            <div class="bg-white p-8 rounded-3xl shadow-md">
+              <svg class="w-12 h-12 text-bosque" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M13 5l7 7-7 7M5 5h4v14H5z"/>
+              </svg>
+            </div>
+            <h4 class="mt-6 font-bold text-lg">Running</h4>
+          </div>
+
+          <!-- Gimnasio -->
+          <div class="flex flex-col items-center">
+            <div class="bg-white p-8 rounded-3xl shadow-md">
+              <svg class="w-12 h-12 text-bosque" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 12h18M5 8v8M19 8v8"/>
+              </svg>
+            </div>
+            <h4 class="mt-6 font-bold text-lg">Gimnasio</h4>
+          </div>
+
+          <!-- Outdoor -->
+          <div class="flex flex-col items-center">
+            <div class="bg-white p-8 rounded-3xl shadow-md">
+              <svg class="w-12 h-12 text-bosque" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 20l9-16 9 16H3z"/>
+              </svg>
+            </div>
+            <h4 class="mt-6 font-bold text-lg">Outdoor</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-900 text-gray-300 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+
+        <!-- Logo -->
+        <div>
+          <h3 class="text-2xl font-black text-white mb-6">SPORT WILD</h3>
+        </div>
+
+        <!-- Tienda -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Tienda</h4>
+          <ul class="space-y-2 font-light">
+            <li><a href="#" class="hover:text-white">Hombre</a></li>
+            <li><a href="#" class="hover:text-white">Mujer</a></li>
+            <li><a href="#" class="hover:text-white">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <!-- Nosotros -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Nosotros</h4>
+          <ul class="space-y-2 font-light">
+            <li><a href="#" class="hover:text-white">Historia</a></li>
+            <li><a href="#" class="hover:text-white">Sostenibilidad</a></li>
+            <li><a href="#" class="hover:text-white">Carreras</a></li>
+          </ul>
+        </div>
+
+        <!-- Ayuda -->
+        <div>
+          <h4 class="font-bold mb-4 text-white">Ayuda</h4>
+          <ul class="space-y-2 font-light">
+            <li><a href="#" class="hover:text-white">Envíos</a></li>
+            <li><a href="#" class="hover:text-white">Devoluciones</a></li>
+            <li><a href="#" class="hover:text-white">Contacto</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Línea inferior -->
+      <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm font-light">
+        © 2026 SPORT WILD. Todos los derechos reservados. | Política de Privacidad
+      </div>
+
     </div>
   </footer>
 
