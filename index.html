@@ -3,22 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web</title>
+    <title>F1 Jackets | Colección Oficial</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="card">
-        <img src="imagen.png" alt="Foto de perfil" class="profile-img">
-        <h1>Hola, soy [Alee]</h1>
-        <p>Estudiante de desarrollo web aprendiendo a publicar en GitHub Pages.</p>
-        
-        <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Portafolio</a>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">F1 Jackets</div>
+        <nav class="nav">
+            <a href="#hero">Inicio</a>
+            <a href="#catalogo">Colección</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Velocidad. Estilo. Pasión.</h1>
+            <p>Descubre nuestra colección exclusiva de chaquetas oficiales inspiradas en la Fórmula 1.</p>
+            <a href="#catalogo" class="btn-primary">Ver Colección</a>
         </div>
-    </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section id="catalogo" class="catalogo">
+        <h2>Nuestra Colección</h2>
+
+        <div class="grid">
+
+            <!-- Producto 1 -->
+            <div class="card">
+                <img src="https://source.unsplash.com/400x500/?racing,jacket" alt="Red Bull Racing Heritage">
+                <h3>Red Bull Racing Heritage</h3>
+                <p class="price">$199</p>
+                <button onclick="addToCart()">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="card">
+                <img src="https://source.unsplash.com/400x500/?ferrari,jacket" alt="Ferrari Team Jacket">
+                <h3>Ferrari Team Jacket</h3>
+                <p class="price">$219</p>
+                <button onclick="addToCart()">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="card">
+                <img src="https://source.unsplash.com/400x500/?mercedes,racing,jacket" alt="Mercedes AMG Petronas">
+                <h3>Mercedes AMG Petronas</h3>
+                <p class="price">$210</p>
+                <button onclick="addToCart()">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="card">
+                <img src="https://source.unsplash.com/400x500/?mclaren,jacket" alt="McLaren Performance Jacket">
+                <h3>McLaren Performance Jacket</h3>
+                <p class="price">$189</p>
+                <button onclick="addToCart()">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="card">
+                <img src="https://source.unsplash.com/400x500/?aston,martin,jacket" alt="Aston Martin Racing">
+                <h3>Aston Martin Racing</h3>
+                <p class="price">$205</p>
+                <button onclick="addToCart()">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="card">
+                <img src="https://source.unsplash.com/400x500/?alpine,racing,jacket" alt="Alpine F1 Team Jacket">
+                <h3>Alpine F1 Team Jacket</h3>
+                <p class="price">$175</p>
+                <button onclick="addToCart()">Añadir al carrito</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 F1 Jackets. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function addToCart() {
+            alert("Producto añadido al carrito 🏁");
+        }
+    </script>
 
 </body>
 </html>
