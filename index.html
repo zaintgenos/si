@@ -1,134 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>F1 Jackets | Colección Oficial</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Performance</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-        <div class="logo">F1 Jackets</div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <nav class="nav-container">
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
-        <nav class="nav" id="nav">
-            <a href="#hero">Inicio</a>
-            <a href="#catalogo">Colección</a>
-            <a href="#">Contacto</a>
-        </nav>
+      <div class="logo">URBAN</div>
 
-        <div class="cart">
-            🛒 <span id="cart-count">0</span>
-        </div>
+      <a href="#" class="btn btn-blue">Entrenar</a>
+    </nav>
+  </header>
 
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-container">
 
-    <!-- HERO -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Domina la pista.<br>Viste la velocidad.</h1>
-            <p>Chaquetas oficiales inspiradas en las escuderías más icónicas.</p>
-            <a href="#catalogo" class="btn-primary">Explorar Colección</a>
-        </div>
-    </section>
+      <div class="hero-text">
+        <h1>TU RENDIMIENTO<br>NO TIENE LÍMITES</h1>
+        <a href="#" class="btn btn-orange">Descubrir Colección</a>
+      </div>
 
-    <!-- CATÁLOGO -->
-    <section id="catalogo" class="catalogo">
-        <h2>Colección 2026</h2>
+      <div class="hero-graphic">
+        <svg viewBox="0 0 500 500">
+          <path d="M10 250 Q150 50 300 250 T490 250"
+            stroke-width="12"
+            fill="none"
+            stroke-linecap="round"
+            stroke="url(#grad)" />
+          <defs>
+            <linearGradient id="grad">
+              <stop offset="0%" stop-color="#2979FF"/>
+              <stop offset="25%" stop-color="#00C853"/>
+              <stop offset="50%" stop-color="#FFD600"/>
+              <stop offset="100%" stop-color="#FF6D00"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
 
-        <div class="grid">
-
-            <div class="card">
-                <img src="https://source.unsplash.com/500x600/?racing,jacket" alt="">
-                <h3>Red Bull Racing Heritage</h3>
-                <p class="price">$199</p>
-                <button class="add-btn">Añadir al carrito</button>
-            </div>
-
-            <div class="card">
-                <img src="https://source.unsplash.com/500x600/?ferrari,jacket" alt="">
-                <h3>Ferrari Team Jacket</h3>
-                <p class="price">$219</p>
-                <button class="add-btn">Añadir al carrito</button>
-            </div>
-
-            <div class="card">
-                <img src="https://source.unsplash.com/500x600/?mercedes,racing,jacket" alt="">
-                <h3>Mercedes AMG Petronas</h3>
-                <p class="price">$210</p>
-                <button class="add-btn">Añadir al carrito</button>
-            </div>
-
-            <div class="card">
-                <img src="https://source.unsplash.com/500x600/?mclaren,jacket" alt="">
-                <h3>McLaren Performance Jacket</h3>
-                <p class="price">$189</p>
-                <button class="add-btn">Añadir al carrito</button>
-            </div>
-
-            <div class="card">
-                <img src="https://source.unsplash.com/500x600/?aston,martin,jacket" alt="">
-                <h3>Aston Martin Racing</h3>
-                <p class="price">$205</p>
-                <button class="add-btn">Añadir al carrito</button>
-            </div>
-
-            <div class="card">
-                <img src="https://source.unsplash.com/500x600/?alpine,racing,jacket" alt="">
-                <h3>Alpine F1 Team Jacket</h3>
-                <p class="price">$175</p>
-                <button class="add-btn">Añadir al carrito</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- MODAL -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <p>Producto añadido al carrito 🏁</p>
-        </div>
     </div>
+  </section>
 
-<script>
+  <!-- PRODUCTO -->
+  <section class="product">
+    <div class="product-container">
+      
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="Atleta">
+      </div>
 
-let cartCount = 0;
-const cartDisplay = document.getElementById("cart-count");
-const buttons = document.querySelectorAll(".add-btn");
-const modal = document.getElementById("modal");
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
-const header = document.getElementById("header");
+      <div class="product-text">
+        <h4>INNOVACIÓN</h4>
+        <h2>TECNOLOGÍA TEXTIL</h2>
+        <p>
+          Diseñada para maximizar tu rendimiento con materiales transpirables,
+          ligeros y de alta resistencia.
+        </p>
+      </div>
 
-buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-        cartCount++;
-        cartDisplay.textContent = cartCount;
+    </div>
+  </section>
 
-        modal.classList.add("show");
-        setTimeout(() => modal.classList.remove("show"), 1500);
-    });
-});
+  <!-- BANNER SOCIAL -->
+  <section class="banner">
+    <div class="banner-overlay">
+      <div class="banner-card">
+        <h2>ÚNETE AL MOVIMIENTO</h2>
+        <a href="#" class="btn btn-orange">Ser Parte</a>
+      </div>
+    </div>
+  </section>
 
-hamburger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-});
+  <!-- CATEGORÍAS -->
+  <section class="categories">
+    <div class="categories-container">
 
-window.addEventListener("scroll", () => {
-    header.classList.toggle("scrolled", window.scrollY > 50);
-});
+      <div class="category">
+        <h3>Running</h3>
+        <p>Equipamiento optimizado para velocidad y resistencia.</p>
+      </div>
 
-</script>
+      <div class="category">
+        <h3>Training</h3>
+        <p>Máxima comodidad para entrenamientos intensos.</p>
+      </div>
+
+      <div class="category">
+        <h3>Yoga</h3>
+        <p>Flexibilidad y suavidad para tu equilibrio interior.</p>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>
